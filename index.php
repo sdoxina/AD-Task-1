@@ -10,6 +10,8 @@
     <link rel="icon" type="image/x-icon" href="./assets/img/buttonconeFavicon.png">
 </head>
 <body>
-    
+    <div class="scallop-box">
+        <p>Inside the wavy box!</p>
+    </div>
 </body>
 </html>

@@ -1,3 +1,15 @@
 * {
     font-family: Poppins, sans-serif;
 }
+
+.scallop-box {
+  width: 90%;
+  height: 500px;
+  background-color: pink;
+  -webkit-mask-image: url('../img/scallop.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: url('../img/scallop.svg'); /* For other browsers */
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}

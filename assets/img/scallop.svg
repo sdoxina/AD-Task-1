@@ -1,0 +1,26 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <defs>
+    <mask id="inwardWaves" x="0" y="0" width="100" height="100" maskUnits="objectBoundingBox">
+      <!-- Make entire area transparent -->
+      <rect width="100%" height="100%" fill="black" />
+
+      <!-- Visible shape with 5 scallops -->
+      <path d="
+        M5,0
+        Q0,10 5,20
+        Q0,30 5,40
+        Q0,50 5,60
+        Q0,70 5,80
+        Q0,90 5,100
+        L95,100
+        Q100,90 95,80
+        Q100,70 95,60
+        Q100,50 95,40
+        Q100,30 95,20
+        Q100,10 95,0
+        Z" fill="white"/>
+    </mask>
+  </defs>
+
+  <rect width="100%" height="100%" fill="white" mask="url(#inwardWaves)" />
+</svg>
