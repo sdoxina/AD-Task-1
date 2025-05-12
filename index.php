@@ -50,12 +50,13 @@
             </button>
          </div>
       </nav>
+      
       <section class="hero-section">
          <div class="scallop-box">
-            <h2 class="text-center"><?= $greeting ?> Welcome to Crochet World!</h2>
+            <h2 class="text-center greeting"><?= $greeting ?> Welcome to Crochet World!</h2>
          </div>
-
       </section>
+
       <section class="divider">
          <img src="./assets/img/juminocoreDivider.png" alt="divider" class="divider">
       </section>
