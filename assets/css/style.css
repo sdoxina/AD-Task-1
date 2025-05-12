@@ -234,7 +234,7 @@
 /* ====== Hero Section ====== */
 
 .hero-section {
-  background: url(../img/soulspeakHeroSectionBG.png) no-repeat center center/cover;
+  background-color: #f9e8d9;
   width: 100%;
   height: 100vh;
   position: relative;
@@ -248,7 +248,7 @@
 
 .scallop-box {
   width: 90%;
-  height: 500px;
+  height: 100vh;
   background-color: pink;
   -webkit-mask-image: url('../img/scallop.svg');
   -webkit-mask-repeat: no-repeat;
@@ -256,4 +256,29 @@
   mask-image: url('../img/scallop.svg'); /* For other browsers */
   mask-repeat: no-repeat;
   mask-size: 100% 100%;
+}
+
+.divider {
+  display: block;
+  margin: 40px auto;
+  width: 90%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .divider {
+    width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .divider {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .divider {
+    width: 85%;
+  }
 }
