@@ -58,7 +58,7 @@
          </div>
       </section>
 
-      <section class="divider">
+      <section class="divider-section">
          <img src="./assets/img/juminocoreDivider.png" alt="divider" class="divider">
       </section>
 
