@@ -20,7 +20,7 @@
   
   .navbar-brand {
     font-weight: 500;
-    color: #00b0dc;
+    color: #db6363;
     font-size: 24px;
     transition: 0.3s color;
     width: 10%;
@@ -37,7 +37,7 @@
   }
   
   .navbar.scrolled {
-    background-color: #f9e8d9;
+    background-color: #f8d388;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   }
   
