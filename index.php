@@ -1,4 +1,26 @@
 <?php
+// Start the session at the very top before anything else
+session_start();
+
+// Check if this is the user's first visit
+if (!isset($_SESSION['visit_count'])) {
+    $_SESSION['visit_count'] = 1; // First visit
+} else {
+    $_SESSION['visit_count']++; // Increment visit count
+}
+
+// Determine if the visit count is odd or even
+$is_odd = $_SESSION['visit_count'] % 2 !== 0;
+
+// Set the quote based on whether it's an odd or even visit
+if ($is_odd) {
+    $quote = '"Every moment is a fresh beginning." — T.S. Eliot';
+} else {
+    $quote = '"Do what you can, with what you have, where you are." — Theodore Roosevelt';
+}
+?>
+
+<?php
    $hour = date("H");
    if ($hour < 12) {
        $greeting = "Good morning!";
@@ -60,6 +82,12 @@
 
       <section class="divider-section">
          <img src="./assets/img/juminocoreDivider.png" alt="divider" class="divider">
+      </section>
+
+      <section class="quote-section">
+        <div class="quote-container">
+            <?= $quote ?>
+        </div>
       </section>
 
       <!-- Footer -->
