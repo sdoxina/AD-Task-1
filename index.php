@@ -42,7 +42,7 @@ if ($is_odd) {
       <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container-fluid">
-            <a class="navbar-brand me-auto d-flex align-items-center" href="index.html">
+            <a class="navbar-brand me-auto d-flex align-items-center" href="index.php">
             <img src="./assets/img/buttonconeLogo.png" alt="Logo" class="navbar-img">
             </a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -55,10 +55,10 @@ if ($is_odd) {
                <div class="offcanvas-body">
                   <ul class="navbar-nav ms-auto pe-3">
                      <li class="nav-item">
-                        <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active mx-lg-2" aria-current="page" href="index.php">Home</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link mx-lg-2" aria-current="page" href="">Items</a>
+                        <a class="nav-link mx-lg-2" aria-current="page" href="./pages/items/index.php">Items</a>
                      </li>
                   </ul>
                </div>
@@ -93,8 +93,8 @@ if ($is_odd) {
                <div class="row">
                   <div class="col-6 col-md-2 mb-3">
                      <ul class="footer flex-column list-unstyled">
-                        <li class="footer-item mb-2"><a href="./pages/page1/index.html" class="footer-link p-0 text-body-secondary">Home</a></li>
-                        <li class="footer-item mb-2"><a href="" class="footer-link p-0 text-body-secondary">Items</a></li>
+                        <li class="footer-item mb-2"><a href="index.php" class="footer-link p-0 text-body-secondary">Home</a></li>
+                        <li class="footer-item mb-2"><a href="./pages/items/index.php" class="footer-link p-0 text-body-secondary">Items</a></li>
                      </ul>
                   </div>
                   <div class="col-6 col-md-2 mb-3">
