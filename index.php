@@ -1,18 +1,14 @@
 <?php
-// Start the session at the very top before anything else
 session_start();
 
-// Check if this is the user's first visit
 if (!isset($_SESSION['visit_count'])) {
-    $_SESSION['visit_count'] = 1; // First visit
+    $_SESSION['visit_count'] = 1;
 } else {
-    $_SESSION['visit_count']++; // Increment visit count
+    $_SESSION['visit_count']++;
 }
 
-// Determine if the visit count is odd or even
 $is_odd = $_SESSION['visit_count'] % 2 !== 0;
 
-// Set the quote based on whether it's an odd or even visit
 if ($is_odd) {
     $quote = '"Every moment is a fresh beginning." — T.S. Eliot';
 } else {
