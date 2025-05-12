@@ -1,3 +1,14 @@
+<?php
+$hour = date("H");
+if ($hour < 12) {
+    $greeting = "Good morning!";
+} elseif ($hour < 18) {
+    $greeting = "Good afternoon!";
+} else {
+    $greeting = "Good evening!";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,9 +50,10 @@
            </button>
         </div>
      </nav>
+     
     <section class="hero-section">
         <div class="scallop-box">
-        <p>Inside the wavy box!</p>
+        <h2 class="text-center"><?= $greeting ?> Welcome to Crochet World!</h2>
     </div>
     </section>
 
