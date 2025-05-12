@@ -50,10 +50,11 @@
             </button>
          </div>
       </nav>
-      
+
       <section class="hero-section">
          <div class="scallop-box">
-            <h2 class="text-center greeting"><?= $greeting ?> Welcome to Crochet World!</h2>
+            <h2 class="text-center greeting"><?= $greeting ?></h2>
+            <h3 class="hero-txt">Explore our handmade crochet collection — crafted with love and detail</h3>
          </div>
       </section>
 
