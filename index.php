@@ -39,7 +39,7 @@
            </button>
         </div>
      </nav>
-    <section>
+    <section class="hero-section">
         <div class="scallop-box">
         <p>Inside the wavy box!</p>
     </div>
