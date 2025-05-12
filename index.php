@@ -61,7 +61,7 @@
                     <h6>Shane D. Oxina</h6>
                  </div>
                  <div class="col-md-7 offset-md-1 mb-3">
-                    <img src="./assets/img/" alt="Buttoncone Logo">
+                    <img src="./assets/img/buttonconeLogo.png" alt="Buttoncone Logo">
                  </div>
               </div>
               <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
