@@ -45,6 +45,10 @@
     </div>
     </section>
 
+    <section class="divider">
+        <img src="./assets/img/juminocoreDivider.png" alt="divider" class="divider">
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
