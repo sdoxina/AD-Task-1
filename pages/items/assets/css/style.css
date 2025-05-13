@@ -233,6 +233,10 @@
 
 /* ====== Items Section ====== */
 
+.items-section{
+  background-color: #ffdae8;
+}
+
 .encircled-title {
   display: inline-block;
   padding: 0.5rem 1.5rem;
