@@ -12,12 +12,12 @@ if ($hour < 12) {
 
 <?php
 $items = [
-  ['name' => 'Crochet Dress', 'category' => 'clothing', 'img' => 'dress.jpg'],
-  ['name' => 'Crochet Bear', 'category' => 'plushie', 'img' => 'bear.jpg'],
-  ['name' => 'Crochet Tote', 'category' => 'bags', 'img' => 'tote.jpg'],
-  ['name' => 'Crochet Hat', 'category' => 'clothing', 'img' => 'hat.jpg'],
-  ['name' => 'Bunny Plushie', 'category' => 'plushie', 'img' => 'bunny.jpg'],
-  ['name' => 'Mini Bag', 'category' => 'bags', 'img' => 'mini_bag.jpg'],
+  ['name' => 'Crochet Cardigan', 'category' => 'clothing', 'img' => './assets/img/crochet-cardigan.jpg'],
+  ['name' => 'Bunny Plushie', 'category' => 'plushie', 'img' => './assets/img/crochet-bunny.jpg'],
+  ['name' => 'Tulip Bag', 'category' => 'bags', 'img' => './assets/img/crochet-tulip-bag.jpg'],
+  ['name' => 'Crochet Hat', 'category' => 'clothing', 'img' => './assets/img/crochet-hat.jpg'],
+  ['name' => 'Penguin Plushie', 'category' => 'plushie', 'img' => './assets/img/crochet-penguin.jpg'],
+  ['name' => 'Water Lily Bag', 'category' => 'bags', 'img' => './assets/img/crochet-lily.jpg'],
 ];
 ?>
 
@@ -102,10 +102,9 @@ $items = [
             <?php if ($item['category'] === $cat): ?>
               <div class="col-md-6 col-lg-4 mb-4 d-flex">
                 <div class="card w-100 crochet-card shadow-sm">
-                  <img src="images/<?php echo $item['img']; ?>" class="card-img-top" alt="<?php echo $item['name']; ?>">
+                  <img src="<?php echo $item['img']; ?>" class="card-img-top" alt="<?php echo $item['name']; ?>">
                   <div class="card-body text-start">
                     <h5 class="card-title"><?php echo $item['name']; ?></h5>
-                    <p class="card-text text-muted">Category: <?php echo ucfirst($item['category']); ?></p>
                   </div>
                 </div>
               </div>
