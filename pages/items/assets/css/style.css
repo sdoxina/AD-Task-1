@@ -326,3 +326,34 @@
 .hero-txt{
   color: #fff;
 }
+
+.btn-group{
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+}
+
+.item-btn{
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 50px;
+  font-weight: 600;
+}
+
+.item-btn:hover{
+  background-color: #ffdae8;
+  border: 2px solid #000;
+}
+
+.clothing-btn{
+  background-color: #bac6a3;
+}
+
+.plushie-btn{
+  background-color: #f8d388;
+}
+
+.bags-btn{
+  background-color: #db6363;
+}
