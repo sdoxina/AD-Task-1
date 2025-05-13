@@ -128,11 +128,6 @@ AD-ProjectName
 
 ## Resources
 
-<!-- TODO: Add References -->
-
 | Title        | Purpose                                                                       | Link          |
 | ------------ | ----------------------------------------------------------------------------- | ------------- |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Creating a Responsive Navigation Bar  | Provide guidance on creating a responsive navbar using Bootstrap 5 | [youtube.com](https://www.youtube.com/watch?v=h5apE3E72wY&list=PLL_WPHglaFqyYdX6ED168NWAtEmklolVH&index=3) |
