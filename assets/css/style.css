@@ -307,10 +307,28 @@
   align-items: center;
   justify-content: center;
   border-top: 2px solid #457045;
+  border-bottom: 2px solid #457045;
 }
 
 .divider {
   background: url(../img/juminocorePattern.png) repeat-x center center/contain;
+  display: block;
+  width: 100%;
+  height: 100px;
+  margin: 0;
+}
+
+.divider-section-2{
+  background-color: #fde8bd;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #457045;
+  border-bottom: 2px solid #457045;
+}
+
+.divider2 {
+  background: url(../img/juminocoreDivider.png) repeat-x center center/contain;
   display: block;
   width: 100%;
   height: 100px;
@@ -343,7 +361,6 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border-top: 2px solid #457045;
   border-bottom: 2px solid #457045;
 }
 

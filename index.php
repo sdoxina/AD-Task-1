@@ -127,6 +127,10 @@ $images = [
                </div>
          </div>
       </section>
+
+      <section class="divider-section-2">
+         <div alt="divider" class="divider2"></div>
+      </section>
       
       <section class="specialties-section">
          <div class="container text-center">
