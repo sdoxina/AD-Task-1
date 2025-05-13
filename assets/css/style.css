@@ -368,10 +368,10 @@
   height: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: left;
-  padding: 1.5rem 0;
+  padding: 1.5rem 3.5rem;
 }
 
 .showcase{
@@ -387,7 +387,7 @@
 }
 
 .intro-desc{
-  width: 70%;
+  width: 85%;
 }
 
 .text-container h2,
@@ -396,4 +396,5 @@
 .text-container ul,
 .text-container li {
       text-align: left;
+      width: 85%;
    }
