@@ -437,3 +437,76 @@
   border-radius: 14px;
   text-align: center;
 }
+
+/* ====== Specialties Section ====== */
+.specialties-section{
+  background-color: #ffdae8;
+  padding: 2.5rem;
+}
+
+.encircled-title {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 50px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card-column {
+  flex: 1 1 250px;
+  max-width: 300px;
+  display: flex;
+}
+
+.specialty-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  height: auto;
+}
+
+.specialty-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.specialty-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+  align-self: center;
+}
+
+.btn-custom {
+  background-color: #e3e3ff;
+  border-radius: 20px;
+  padding: 6px 20px;
+  font-weight: 500;
+  border: none;
+  color: #333;
+  margin-top: auto;
+  align-self: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #ccc;
+}
