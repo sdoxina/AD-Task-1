@@ -1,20 +1,21 @@
 <?php
-session_start();
+$quotes = [
+    '"Every moment is a fresh beginning." — T.S. Eliot',
+    '"Do what you can, with what you have, where you are." — Theodore Roosevelt',
+    '"Creativity is intelligence having fun." — Albert Einstein',
+    '"Happiness is handmade."',
+    '"In a world full of trends, I want to remain a classic."',
+    '"The best way to get things done is to begin." — Unknown',
+    '"Art is not a thing, it is a way." — Elbert Hubbard',
+    '"Made with love and a little bit of yarn."',
+    '"The only way to do great work is to love what you do." — Steve Jobs',
+    '"Crochet is cheaper than therapy and you get a blanket out of it."'
+];
 
-if (!isset($_SESSION['visit_count'])) {
-    $_SESSION['visit_count'] = 1;
-} else {
-    $_SESSION['visit_count']++;
-}
-
-$is_odd = $_SESSION['visit_count'] % 2 !== 0;
-
-if ($is_odd) {
-    $quote = '"Every moment is a fresh beginning." — T.S. Eliot';
-} else {
-    $quote = '"Do what you can, with what you have, where you are." — Theodore Roosevelt';
-}
+// Pick one at random
+$quote = $quotes[array_rand($quotes)];
 ?>
+
 
 <?php
    $hour = date("H");
@@ -42,7 +43,7 @@ if ($is_odd) {
       <!-- Navigation Bar -->
       <nav class="navbar navbar-expand-lg fixed-top">
          <div class="container-fluid">
-            <a class="navbar-brand me-auto d-flex align-items-center" href="index.php">
+            <a class="navbar-brand me-auto d-flex align-items-center" href="index.php?home_clicked=1">
             <img src="./assets/img/buttonconeLogo.png" alt="Logo" class="navbar-img">
             </a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -55,7 +56,7 @@ if ($is_odd) {
                <div class="offcanvas-body">
                   <ul class="navbar-nav ms-auto pe-3">
                      <li class="nav-item">
-                        <a class="nav-link active mx-lg-2" aria-current="page" href="index.php">Home</a>
+                        <a class="nav-link active mx-lg-2" aria-current="page" href="index.php?home_clicked=1">Home</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link mx-lg-2" aria-current="page" href="./pages/items/index.php">Items</a>
@@ -71,13 +72,15 @@ if ($is_odd) {
 
       <section class="hero-section">
          <div class="scallop-box">
+            <div class="scallop-container">
             <h2 class="text-center greeting"><?= $greeting ?></h2>
             <h3 class="hero-txt">Explore our handmade crochet collection — crafted with love and detail</h3>
+            </div>
          </div>
       </section>
 
       <section class="divider-section">
-         <img src="./assets/img/juminocoreDivider.png" alt="divider" class="divider">
+         <div alt="divider" class="divider"></div>
       </section>
 
       <section class="quote-section">
@@ -93,7 +96,7 @@ if ($is_odd) {
                <div class="row">
                   <div class="col-6 col-md-2 mb-3">
                      <ul class="footer flex-column list-unstyled">
-                        <li class="footer-item mb-2"><a href="index.php" class="footer-link p-0 text-body-secondary">Home</a></li>
+                        <li class="footer-item mb-2"><a href="index.php?home_clicked=1" class="footer-link p-0 text-body-secondary">Home</a></li>
                         <li class="footer-item mb-2"><a href="./pages/items/index.php" class="footer-link p-0 text-body-secondary">Items</a></li>
                      </ul>
                   </div>
