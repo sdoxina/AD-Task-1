@@ -440,17 +440,18 @@
 
 /* ====== Specialties Section ====== */
 .specialties-section{
-  background-color: #ffdae8;
+  background: url(../img/heisei-retro-pattern.png) no-repeat center center/cover;
   padding: 2.5rem;
 }
 
 .encircled-title {
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  border: 2px solid #000;
+  border: 2px solid #457045;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #f9e8d9;
   font-weight: 600;
+  color: #457045;
 }
 
 .card-row {
@@ -471,9 +472,11 @@
   display: flex;
   flex-direction: column;
   border-radius: 12px;
+  border: 2px solid #457045;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
   height: auto;
+  background-color: #f9e8d9;
 }
 
 .specialty-card:hover {
@@ -496,17 +499,19 @@
 }
 
 .btn-custom {
-  background-color: #e3e3ff;
+  background-color: #db6363;
+  border: 2px solid #457045;
   border-radius: 20px;
   padding: 6px 20px;
   font-weight: 500;
   border: none;
-  color: #333;
+  color: #fff;
   margin-top: auto;
   align-self: center;
   transition: background-color 0.3s ease;
 }
 
 .btn-custom:hover {
-  background-color: #ccc;
+  background-color: #f8d388;
+  color: #457045;
 }
