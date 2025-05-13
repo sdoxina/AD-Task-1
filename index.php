@@ -92,7 +92,9 @@ $quote = $quotes[array_rand($quotes)];
       <section class="about-section">
          <div class="about-container">
             <div class="introduction">
-               <h2>WHO WE ARE</h2>
+               <div class="text-container">
+                  <h2>WHO WE ARE</h2>
+               </div>
             </div>
             <div></div>
          </div>
