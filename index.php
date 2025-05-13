@@ -1,12 +1,13 @@
 <?php
-   $hour = date("H");
-   if ($hour < 12) {
-       $greeting = "Good morning!";
-   } elseif ($hour < 18) {
-       $greeting = "Good afternoon!";
-   } elseif ($hour > 18) {
-       $greeting = "Good evening!";
-   }
+date_default_timezone_set('Asia/Manila');
+$hour = date("H");
+if ($hour < 12) {
+    $greeting = "Good morning!";
+} elseif ($hour < 18) {
+    $greeting = "Good afternoon!";
+} elseif ($hour >= 18) {
+    $greeting = "Good evening!";
+}
 ?>
 
 <?php
@@ -79,7 +80,9 @@ $images = [
       <section class="hero-section">
          <div class="scallop-box">
             <div class="scallop-container">
-            <h2 class="text-center greeting"><?= $greeting ?></h2>
+               <div class="greeting-block">
+                  <h2 class="text-center greeting"><?= $greeting ?></h2>
+               </div>
             <h3 class="hero-txt">Explore our handmade crochet collection — crafted with love and detail</h3>
             </div>
          </div>
