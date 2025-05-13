@@ -95,6 +95,12 @@ $quote = $quotes[array_rand($quotes)];
             <div></div>
          </div>
       </section>
+      
+      <section class="specialties-section">
+         <div class="section-title">
+            OUR SPECIALTIES
+         </div>
+      </section>
 
       <!-- Footer -->
       <footer class="footer">
