@@ -102,9 +102,9 @@ $images = [
          <div class="about-container">
             <div class="introduction">
                <div class="text-container">
-                  <h2 class="intro-heading">WHO WE ARE</h2>
+                  <h2 class="intro-heading">Who We Are</h2>
                   <p class="intro-desc">Our shop is where yarn comes to life — filled with soft, whimsical crochet creations made to spark joy and add a little magic to your everyday.</p>
-                  <h3>📞 Contact Us</h3>
+                  <h3 class="intro-heading">📞 Contact Us</h3>
                   <p>Got questions or custom orders in mind? We'd love to hear from you!</p>
                   <ul class="list-unstyled">
                      <li><strong>📍 Location:</strong> Near FEU Tech, P. Paredes Street, Sampaloc, Manila</li>
