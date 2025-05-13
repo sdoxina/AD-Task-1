@@ -74,9 +74,9 @@ $items = [
 
     <!-- Filter Buttons -->
     <div class="btn-group mb-5" role="group">
-      <a href="#clothing" class="btn btn-outline-success">Clothing</a>
-      <a href="#plushie" class="btn btn-outline-warning">Plushie</a>
-      <a href="#bags" class="btn btn-outline-danger">Bags</a>
+      <a href="#clothing" class="btn item-btn clothing-btn">Clothing</a>
+      <a href="#plushie" class="btn item-btn plushie-btn">Plushie</a>
+      <a href="#bags" class="btn item-btn bags-btn">Bags</a>
     </div>
             </div>
          </div>
