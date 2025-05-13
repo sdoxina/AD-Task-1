@@ -10,7 +10,7 @@
   <h3 align="center">Buttoncone</h3>
 </div>
 <div align="center">
-  Short Description. (Optional)
+  A simple crochet showcase website built with PHP, showcasing the use of PHP declarations, loops, and conditionals.
 </div>
 
 <br />
