@@ -5,7 +5,7 @@
   /* ====== Navigation Bar ====== */
     
   .navbar {
-    background-color: transparent;
+    background-color: #ffdae8;
     height: 80px;
     padding: 0.5rem;
   }
@@ -241,6 +241,7 @@
   justify-content: center;
   padding: 4rem 1rem;
   text-align: center;
+  position: relative; /* ensure stacking context */
 }
 
 .scallop-box {
@@ -258,31 +259,44 @@
   justify-content: center;
   align-items: center;
   padding: 2rem;
+  position: relative; /* required for ::before and stacking */
+  overflow: hidden;
 }
 
 .scallop-box::before {
-  background-color: rgba(0, 0, 0, 0.6);
   content: "";
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; /* sits *above* background, *below* content */
 }
 
-.scallop-container{
+.scallop-container {
   height: 100vh;
-  z-index: 1;
+  z-index: 2; /* sits *above* the ::before */
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
 .greeting {
   text-align: center;
-  max-width: 90%;
-  font-size: 2rem;
-  color: #457045;
+  font-size: 3rem;
+  color: #fff; /* Consider white text if background is dark */
   font-family: Poppins, sans-serif;
 }
+
+.hero-txt{
+  color: #fff;
+  width: 65%;
+}
+
 
 .divider-section{
   margin: 0px;
