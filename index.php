@@ -1,4 +1,15 @@
 <?php
+   $hour = date("H");
+   if ($hour < 12) {
+       $greeting = "Good morning!";
+   } elseif ($hour < 18) {
+       $greeting = "Good afternoon!";
+   } elseif ($hour > 18) {
+       $greeting = "Good evening!";
+   }
+?>
+
+<?php
 $quotes = [
     '"Every moment is a fresh beginning." — T.S. Eliot',
     '"Do what you can, with what you have, where you are." — Theodore Roosevelt',
@@ -12,20 +23,15 @@ $quotes = [
     '"Crochet is cheaper than therapy and you get a blanket out of it."'
 ];
 
-// Pick one at random
 $quote = $quotes[array_rand($quotes)];
 ?>
 
-
 <?php
-   $hour = date("H");
-   if ($hour < 12) {
-       $greeting = "Good morning!";
-   } elseif ($hour < 18) {
-       $greeting = "Good afternoon!";
-   } elseif ($hour > 18) {
-       $greeting = "Good evening!";
-   }
+$images = [
+    './assets/img/product1.jpg',
+    './assets/img/product2.jpg',
+    './assets/img/product3.jpg'
+];
 ?>
 
 <!DOCTYPE html>
@@ -107,8 +113,15 @@ $quote = $quotes[array_rand($quotes)];
                </div>
             </div>
             <div class="showcase">
-               <img src="./assets/img/coquette.png" alt="coquette background" class="coquette-frame">
-            </div>
+               <div class="coquette-frame">
+                  <div class="wrapper">
+                     <?php foreach ($images as $img): ?>
+                     <div class="card" style="background-image: url('<?php echo $img; ?>'); background-size: cover; background-position: center;">
+                     </div>
+                     <?php endforeach; ?>
+                  </div>
+               </div>
+               </div>
          </div>
       </section>
       
