@@ -286,10 +286,14 @@
 }
 
 .greeting {
-  text-align: center;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #457045;
+  border-radius: 50px;
+  background-color: #f9e8d9;
+  font-weight: 600;
   font-size: 3rem;
-  color: #fff; /* Consider white text if background is dark */
-  font-family: Poppins, sans-serif;
+  color: #457045;
 }
 
 .hero-txt{
@@ -403,6 +407,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.intro-heading{
+  font-weight: 600;
+  color: #457045;
 }
 
 .intro-desc{
