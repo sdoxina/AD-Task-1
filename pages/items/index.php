@@ -1,3 +1,18 @@
+<?php
+// Get selected category from the URL, default to 'all'
+$category = isset($_GET['category']) ? $_GET['category'] : 'all';
+
+// Sample items with categories
+$items = [
+    ['name' => 'Crochet Dress', 'category' => 'clothing', 'img' => 'dress.jpg'],
+    ['name' => 'Crochet Bear', 'category' => 'plushie', 'img' => 'bear.jpg'],
+    ['name' => 'Crochet Tote', 'category' => 'bags', 'img' => 'tote.jpg'],
+    ['name' => 'Crochet Hat', 'category' => 'clothing', 'img' => 'hat.jpg'],
+    ['name' => 'Bunny Plushie', 'category' => 'plushie', 'img' => 'bunny.jpg'],
+    ['name' => 'Mini Bag', 'category' => 'bags', 'img' => 'mini_bag.jpg'],
+];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,6 +54,35 @@
             </button>
          </div>
       </nav>
+
+      <section class="items-section">
+         <h2 class="mb-4">Our Crochet Items</h2>
+
+    <!-- Filter Buttons -->
+    <div class="mb-4">
+        <a href="?category=all" class="btn btn-outline-primary">All</a>
+        <a href="?category=clothing" class="btn btn-outline-success">Clothing</a>
+        <a href="?category=plushie" class="btn btn-outline-warning">Plushie</a>
+        <a href="?category=bags" class="btn btn-outline-danger">Bags</a>
+    </div>
+
+    <!-- Items Grid -->
+    <div class="row">
+        <?php foreach ($items as $item): ?>
+            <?php if ($category == 'all' || $item['category'] == $category): ?>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="images/<?php echo $item['img']; ?>" class="card-img-top" alt="<?php echo $item['name']; ?>">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo $item['name']; ?></h5>
+                            <p class="card-text">Category: <?php echo ucfirst($item['category']); ?></p>
+                        </div>
+                    </div>
+                </div>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </div>
+      </section>
 
    <!-- Footer -->
       <footer class="footer">
