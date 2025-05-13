@@ -230,3 +230,28 @@
     border-top: var(--bs-border-width) var(--bs-border-style) !important;
     border-color: #bac6a3 !important;
 }
+
+.encircled-title {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 50px;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.crochet-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.crochet-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}

@@ -1,17 +1,14 @@
 <?php
-// Get selected category from the URL, default to 'all'
-$category = isset($_GET['category']) ? $_GET['category'] : 'all';
-
-// Sample items with categories
 $items = [
-    ['name' => 'Crochet Dress', 'category' => 'clothing', 'img' => 'dress.jpg'],
-    ['name' => 'Crochet Bear', 'category' => 'plushie', 'img' => 'bear.jpg'],
-    ['name' => 'Crochet Tote', 'category' => 'bags', 'img' => 'tote.jpg'],
-    ['name' => 'Crochet Hat', 'category' => 'clothing', 'img' => 'hat.jpg'],
-    ['name' => 'Bunny Plushie', 'category' => 'plushie', 'img' => 'bunny.jpg'],
-    ['name' => 'Mini Bag', 'category' => 'bags', 'img' => 'mini_bag.jpg'],
+  ['name' => 'Crochet Dress', 'category' => 'clothing', 'img' => 'dress.jpg'],
+  ['name' => 'Crochet Bear', 'category' => 'plushie', 'img' => 'bear.jpg'],
+  ['name' => 'Crochet Tote', 'category' => 'bags', 'img' => 'tote.jpg'],
+  ['name' => 'Crochet Hat', 'category' => 'clothing', 'img' => 'hat.jpg'],
+  ['name' => 'Bunny Plushie', 'category' => 'plushie', 'img' => 'bunny.jpg'],
+  ['name' => 'Mini Bag', 'category' => 'bags', 'img' => 'mini_bag.jpg'],
 ];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -55,34 +52,45 @@ $items = [
          </div>
       </nav>
 
-      <section class="items-section">
-         <h2 class="mb-4">Our Crochet Items</h2>
+      <section class="items-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 display-6 encircled-title">Our Crochet Items</h2>
 
     <!-- Filter Buttons -->
-    <div class="mb-4">
-        <a href="?category=all" class="btn btn-outline-primary">All</a>
-        <a href="?category=clothing" class="btn btn-outline-success">Clothing</a>
-        <a href="?category=plushie" class="btn btn-outline-warning">Plushie</a>
-        <a href="?category=bags" class="btn btn-outline-danger">Bags</a>
+    <div class="btn-group mb-5" role="group">
+      <a href="#clothing" class="btn btn-outline-success">Clothing</a>
+      <a href="#plushie" class="btn btn-outline-warning">Plushie</a>
+      <a href="#bags" class="btn btn-outline-danger">Bags</a>
     </div>
 
-    <!-- Items Grid -->
-    <div class="row">
-        <?php foreach ($items as $item): ?>
-            <?php if ($category == 'all' || $item['category'] == $category): ?>
-                <div class="col-md-4 mb-4">
-                    <div class="card">
-                        <img src="images/<?php echo $item['img']; ?>" class="card-img-top" alt="<?php echo $item['name']; ?>">
-                        <div class="card-body">
-                            <h5 class="card-title"><?php echo $item['name']; ?></h5>
-                            <p class="card-text">Category: <?php echo ucfirst($item['category']); ?></p>
-                        </div>
-                    </div>
+    <!-- Grouped Items by Category -->
+    <?php
+    $categories = ['clothing', 'plushie', 'bags'];
+    foreach ($categories as $cat):
+    ?>
+      <div id="<?php echo $cat; ?>" class="mb-5">
+        <h3 class="mb-4 text-capitalize"><?php echo $cat; ?></h3>
+        <div class="row justify-content-center">
+          <?php foreach ($items as $item): ?>
+            <?php if ($item['category'] === $cat): ?>
+              <div class="col-md-6 col-lg-4 mb-4 d-flex">
+                <div class="card w-100 crochet-card shadow-sm">
+                  <img src="images/<?php echo $item['img']; ?>" class="card-img-top" alt="<?php echo $item['name']; ?>">
+                  <div class="card-body text-start">
+                    <h5 class="card-title"><?php echo $item['name']; ?></h5>
+                    <p class="card-text text-muted">Category: <?php echo ucfirst($item['category']); ?></p>
+                  </div>
                 </div>
+              </div>
             <?php endif; ?>
-        <?php endforeach; ?>
-    </div>
-      </section>
+          <?php endforeach; ?>
+        </div>
+      </div>
+    <?php endforeach; ?>
+  </div>
+</section>
+
+
 
    <!-- Footer -->
       <footer class="footer">
