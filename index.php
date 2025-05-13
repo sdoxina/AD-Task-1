@@ -140,7 +140,7 @@ $images = [
                      <h5 class="card-title">Clothing</h5>
                      <img src="./assets/img/clothing-icon.png" alt="Clothing Icon" class="specialty-icon mb-3">
                      <p class="card-text">Stylish, comfortable, and unique clothing tailored to your lifestyle and personality.</p>
-                     <a href="#" class="btn btn-custom">Browse</a>
+                     <a href="./pages/items/index.php" class="btn btn-custom">Browse</a>
                   </div>
                   </div>
                </div>
@@ -152,7 +152,7 @@ $images = [
                      <h5 class="card-title">Plushie</h5>
                      <img src="./assets/img/plushie-icon.png" alt="Plushie Icon" class="specialty-icon mb-3">
                      <p class="card-text">Cuddly, cute, and handmade plushies perfect for gifts or personal collections.</p>
-                     <a href="#" class="btn btn-custom">Browse</a>
+                     <a href="./pages/items/index.php" class="btn btn-custom">Browse</a>
                   </div>
                   </div>
                </div>
@@ -164,7 +164,7 @@ $images = [
                      <h5 class="card-title">Bags</h5>
                      <img src="./assets/img/bags-icon.png" alt="Bags Icon" class="specialty-icon mb-3">
                      <p class="card-text">Functional and fashionable bags designed for everyday use and special occasions.</p>
-                     <a href="#" class="btn btn-custom">Browse</a>
+                     <a href="./pages/items/index.php" class="btn btn-custom">Browse</a>
                   </div>
                   </div>
                </div>
