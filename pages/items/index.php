@@ -82,7 +82,7 @@ $items = [
          </div>
       </section>
 
-      <section class="items-section py-5 bg-light">
+      <section class="items-section py-5">
   <div class="container text-center">
     <h2 class="mb-4 display-6 encircled-title">Our Crochet Items</h2>
 
