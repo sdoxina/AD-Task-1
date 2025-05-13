@@ -231,6 +231,8 @@
     border-color: #bac6a3 !important;
 }
 
+/* ====== Items Section ====== */
+
 .encircled-title {
   display: inline-block;
   padding: 0.5rem 1.5rem;
@@ -254,4 +256,73 @@
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
+}
+
+/* ====== Hero Section ====== */
+.hero-section {
+  background-color: #f9e8d9;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative; /* ensure stacking context */
+}
+
+.scallop-box {
+  width: 90%;
+  height: 100vh;
+  background: url(../img/crochet-bouquet.png) no-repeat center center/cover;
+  -webkit-mask-image: url('../img/scallop.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-image: url('../img/scallop.svg');
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  position: relative; /* required for ::before and stacking */
+  overflow: hidden;
+}
+
+.scallop-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1; /* sits *above* background, *below* content */
+}
+
+.scallop-container {
+  height: 100vh;
+  z-index: 2; /* sits *above* the ::before */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.greeting {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 2px solid #457045;
+  border-radius: 50px;
+  background-color: #f9e8d9;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #457045;
+}
+
+.hero-txt{
+  color: #fff;
 }

@@ -1,4 +1,16 @@
 <?php
+date_default_timezone_set('Asia/Manila');
+$hour = date("H");
+if ($hour < 12) {
+    $greeting = "Good morning!";
+} elseif ($hour < 18) {
+    $greeting = "Good afternoon!";
+} elseif ($hour >= 18) {
+    $greeting = "Good evening!";
+}
+?>
+
+<?php
 $items = [
   ['name' => 'Crochet Dress', 'category' => 'clothing', 'img' => 'dress.jpg'],
   ['name' => 'Crochet Bear', 'category' => 'plushie', 'img' => 'bear.jpg'],
@@ -52,9 +64,13 @@ $items = [
          </div>
       </nav>
 
-      <section class="items-section py-5 bg-light">
-  <div class="container text-center">
-    <h2 class="mb-4 display-6 encircled-title">Our Crochet Items</h2>
+      <section class="hero-section">
+         <div class="scallop-box">
+            <div class="scallop-container">
+               <div class="greeting-block">
+                  <h2 class="text-center greeting"><?= $greeting ?></h2>
+               </div>
+            <h3 class="hero-txt">Check out our collection</h3>
 
     <!-- Filter Buttons -->
     <div class="btn-group mb-5" role="group">
@@ -62,6 +78,13 @@ $items = [
       <a href="#plushie" class="btn btn-outline-warning">Plushie</a>
       <a href="#bags" class="btn btn-outline-danger">Bags</a>
     </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="items-section py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-4 display-6 encircled-title">Our Crochet Items</h2>
 
     <!-- Grouped Items by Category -->
     <?php
