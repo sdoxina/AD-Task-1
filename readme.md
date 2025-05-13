@@ -52,22 +52,28 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
+**Buttoncone** is a simple crochet item catalog site that demonstrates basic yet important PHP fundamentals including:
+- Variable declaration and array handling
+- Loops for rendering item listings
+- Conditionals for filtering and greeting messages
 
-Description of the project in details.
+This project displays a collection of handmade crochet items grouped by category (Clothing, Plushies, Bags). The user can view the categorized items on a single page. PHP is used to dynamically generate the items using loops and conditionals.
+
+### How PHP is Used:
+
+- **Declaration**: An associative array of items is declared in PHP. Each item includes a name, image, and category.
+- **Looping**: The foreach loop is used to iterate through all items and render them as Bootstrap cards in the HTML.
+- **Conditionals**: Items are grouped and shown based on their category using if conditions inside the loop. Time-based greetings like “Good Morning,” “Good Afternoon,” or “Good Evening” are also handled using PHP conditionals by checking the current server time with date('H').
 
 ### Key Components
 
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+- Homepage with greeting based on the time of day
+- Items page showing filtered crochet items by category
+- Responsive layout using Bootstrap
+- Image assets dynamically rendered from PHP arrays
 
 ### Technology
 
-<!-- TODO: List of Technology Used -->
 #### Language
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
