@@ -129,9 +129,47 @@ $images = [
       </section>
       
       <section class="specialties-section">
-         <div class="section-title">
-            OUR SPECIALTIES
-         </div>
+         <div class="container text-center">
+            <h2 class="encircled-title">Our Specialties</h2>
+
+            <div class="card-row mt-5">
+               <!-- Clothing -->
+               <div class="card-column">
+                  <div class="card specialty-card">
+                  <div class="card-body">
+                     <h5 class="card-title">Clothing</h5>
+                     <img src="./assets/img/clothing-icon.png" alt="Clothing Icon" class="specialty-icon mb-3">
+                     <p class="card-text">Stylish, comfortable, and unique clothing tailored to your lifestyle and personality.</p>
+                     <a href="#" class="btn btn-custom">Browse</a>
+                  </div>
+                  </div>
+               </div>
+
+               <!-- Plushie -->
+               <div class="card-column">
+                  <div class="card specialty-card">
+                  <div class="card-body">
+                     <h5 class="card-title">Plushie</h5>
+                     <img src="./assets/img/plushie-icon.png" alt="Plushie Icon" class="specialty-icon mb-3">
+                     <p class="card-text">Cuddly, cute, and handmade plushies perfect for gifts or personal collections.</p>
+                     <a href="#" class="btn btn-custom">Browse</a>
+                  </div>
+                  </div>
+               </div>
+
+               <!-- Bags -->
+               <div class="card-column">
+                  <div class="card specialty-card">
+                  <div class="card-body">
+                     <h5 class="card-title">Bags</h5>
+                     <img src="./assets/img/bags-icon.png" alt="Bags Icon" class="specialty-icon mb-3">
+                     <p class="card-text">Functional and fashionable bags designed for everyday use and special occasions.</p>
+                     <a href="#" class="btn btn-custom">Browse</a>
+                  </div>
+                  </div>
+               </div>
+            </div>
+            </div>
       </section>
 
       <!-- Footer -->
