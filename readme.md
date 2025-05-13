@@ -7,10 +7,8 @@
   <a href="https://github.com/zyx-0314/">
     <img src="./assets/img/buttonconeLogo.png" alt="buttoncone" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Buttoncone</h3>
 </div>
-<!-- TODO: Make a short description -->
 <div align="center">
   Short Description. (Optional)
 </div>
