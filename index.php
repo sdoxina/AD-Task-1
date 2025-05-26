@@ -100,7 +100,8 @@ $images = [
 
       <section class="about-section">
          <div class="about-container">
-            <div class="introduction">
+            <div class="row">
+            <div class="col-sm introduction">
                <div class="text-container">
                   <h2 class="intro-heading">Who We Are</h2>
                   <p class="intro-desc">Our shop is where yarn comes to life — filled with soft, whimsical crochet creations made to spark joy and add a little magic to your everyday.</p>
@@ -115,7 +116,7 @@ $images = [
                   </ul>
                </div>
             </div>
-            <div class="showcase">
+            <div class="col-sm showcase">
                <div class="coquette-frame">
                   <div class="wrapper">
                      <?php foreach ($images as $img): ?>
@@ -123,6 +124,7 @@ $images = [
                      </div>
                      <?php endforeach; ?>
                   </div>
+               </div>
                </div>
                </div>
          </div>
