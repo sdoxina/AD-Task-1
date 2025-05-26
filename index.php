@@ -78,6 +78,7 @@ $images = [
       </nav>
 
       <section class="hero-section">
+         <div class="container-fluid">
          <div class="scallop-box">
             <div class="scallop-container">
                <div class="greeting-block">
@@ -86,6 +87,7 @@ $images = [
             <h3 class="hero-txt">Explore our handmade crochet collection — crafted with love and detail</h3>
             </div>
          </div>
+      </div>
       </section>
 
       <section class="divider-section">

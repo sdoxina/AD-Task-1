@@ -245,7 +245,6 @@
 }
 
 .scallop-box {
-  width: 90%;
   height: 100vh;
   background: url(../img/crochet-bouquet.png) no-repeat center center/cover;
   -webkit-mask-image: url('../img/scallop.svg');
