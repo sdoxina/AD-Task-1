@@ -1,15 +1,14 @@
 {
-    "name": "ramir/php-pages",
-    "type": "project",
+    "name": "oxina/ad-task-1",
     "autoload": {
         "psr-4": {
-            "Ramir\\PhpPages\\": "src/"
+            "Oxina\\AdTask1\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "zyx-0314-FJorn",
-            "email": "ramirezian037@gmail.com"
+            "name": "sdoxina",
+            "email": "202311026@fit.edu.ph"
         }
     ],
     "require": {}
