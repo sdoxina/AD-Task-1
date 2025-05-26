@@ -340,7 +340,7 @@
 .item-btn{
   display: inline-block;
   padding: 0.5rem 1.5rem;
-  border: 2px solid #000;
+  border: 2px solid #db6363;
   border-radius: 50px;
   font-weight: 600;
   background-color: #ffdae8;
@@ -348,7 +348,7 @@
 
 .item-btn:hover{
   background-color: #f8d388;
-  border: 2px solid #000;
+  border: 2px solid #db6363;
 }
 
 .divider-section-2{
