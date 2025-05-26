@@ -101,7 +101,7 @@ $images = [
       </section>
 
       <section class="about-section">
-         <div class="about-container">
+         <div class="container-fluid about-container">
             <div class="row">
             <div class="col-sm introduction">
                <div class="text-container">
